@@ -4,7 +4,11 @@
 
 ##### Detect and Analyze Trojan attacks on deep neural networks that are designed to be difficult to detect. 
 
-This repository contains code for the **Trojan Detection Challenge (TDC) NeurIPS 2022** competition. To learn more, please see the [competition website](https://trojandetection.ai/).
+### **Overview**
+
+Neural Trojans are a growing concern for the security of ML systems, but little is known about the fundamental offense-defense balance of Trojan detection. Early work suggests that standard Trojan attacks may be easy to detect, but recently it has been shown that in simple cases one can design practically undetectable Trojans.
+
+This repository contains code for the **Trojan Detection Challenge (TDC) NeurIPS 2022** [competition](https://trojandetection.ai/).
 
 There are 3 main tracks for this competition:
 - **Trojan Detection Track**: Given a dataset of Trojaned and clean networks spanning multiple data sources, build a Trojan detector that classifies a test set of networks with held-out labels (Trojan, clean). For more information, see here.
