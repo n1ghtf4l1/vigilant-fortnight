@@ -27,7 +27,7 @@ The ```utils.py``` file contains helper functions for loading new models, genera
 
 ### **Data**
 
-Unlike standard machine learning tasks, the datasets consist of neural networks. That is, rather than making predictions on input images, goal will be identifying hidden functionality in neural networks. Networks are trained on four standard data sources: MNIST, CIFAR-10, CIFAR-100, and GTSRB. Variants of two standard Trojan attacks are used that are modified to be harder to detect. For the Detection Track, the training, validation, and test sets have 1,000 neural networks each. Networks are split evenly across all four data sources. Half of the networks are Trojaned, and there is a 50/50 split between the two attack types. For more information, see the Tracks page of the competition website.
+Unlike standard machine learning tasks, the datasets consist of neural networks. That is, rather than making predictions on input images, goal will be identifying hidden functionality in neural networks. Networks are trained on four standard data sources: MNIST, CIFAR-10, CIFAR-100, and GTSRB. Variants of two standard Trojan attacks are used that are modified to be harder to detect. For the Detection Track, the training, validation, and test sets have 1,000 neural networks each. Networks are split evenly across all four data sources. Half of the networks are Trojaned, and there is a 50/50 split between the two attack types.
 
 ## How to Use
 
