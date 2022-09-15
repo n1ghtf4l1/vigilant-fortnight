@@ -8,4 +8,4 @@ In this [track](https://codalab.lisn.upsaclay.fr/competitions/5951), goal is to 
 
 ## Contents
 
-Using the MNTD baseline as an example, we provide starter code for submission in `example_submission.ipynb`.
+Using the MNTD baseline as an example, starter code provided for submission in ```example_submission.ipynb```.
