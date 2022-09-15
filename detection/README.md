@@ -1,6 +1,6 @@
 # **Trojan Detection**
 
-In this track, goal is to build a detector that can tell whether a given neural network contains a Trojan. We provide a dataset of networks with labels (Trojan, clean) for building your detector. Training additional networks to augment this dataset is not allowed. You will submit predictions on a set of validation/test networks to the evaluation server. The validation and test sets have held-out labels, and the evaluation server only accepts 5 submissions per day for the validation set and 5 submissions total for the test set. 
+In this [track](https://codalab.lisn.upsaclay.fr/competitions/5951), goal is to build a detector that can tell whether a given neural network contains a Trojan. We provide a dataset of networks with labels (Trojan, clean) for building your detector. Training additional networks to augment this dataset is not allowed. You will submit predictions on a set of validation/test networks to the evaluation server. The validation and test sets have held-out labels. 
 
 **Data**: The training, validation, and test sets have 1,000 networks each. Networks are split evenly across all four data sources. Half of the networks are Trojaned, and there is a 50/50 split between patch and whole-image attacks.
 
