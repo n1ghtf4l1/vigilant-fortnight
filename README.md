@@ -32,3 +32,19 @@ Unlike standard machine learning tasks, the datasets consist of neural networks.
 ## How to Use
 
 **Clone this repository, download the competition [datasets](https://huggingface.co/datasets/anubhavde/trojan-detection/blob/main/tdc_datasets.zip) from my HuggingFace repository and unzip adjacent to the repository**. Ensure that Jupyter version is up-to-date (fairly recent). To avoid errors with model incompatibility, please use PyTorch version 1.11.0. Run one of the example notebooks or start building your own submission.
+
+### **Additional Information**
+
+#### **Model Architectures and Data Sources**
+
+Networks have been trained on four standard data sources: MNIST, CIFAR-10, CIFAR-100, and GTSRB. GTSRB images are resized to 32x32.
+
+For MNIST, convolutional networks have been used. For CIFAR-10 and CIFAR-100, Wide Residual Networks have been used. For GTSRB, Vision Transformers have been used.
+
+#### **Trojan Attacks**
+
+Trojaned networks have been trained with patch and whole-image attacks. These attacks are variants of the foundational BadNets and blended attacks modified to be harder to detect. These modified attacks use a simple change to the standard Trojan training procedure. Instead of training Trojaned networks from scratch, they were fine-tuned from the starting parameters of clean networks and regularize them with various similarity losses such that they are similar to the distribution of clean networks. Additionally, the networks have been trained to have high specificity for the particular trigger pattern associated with the attack. In extensive experiments, baseline detectors have been verified obtain substantially lower performance on these hard-to-detect Trojans.
+
+All patch attacks in datasets use random trigger patterns sampled from an independent Bernoulli 0/1 distribution for each pixel and color channel (for Trojan detection and target label prediction, patches are black-and-white; for trigger synthesis, patches are colored). Each patch attack uses a different location and size for its trigger mask. All blended attacks in our datasets use random trigger trigger patterns sampled from an independent Uniform(0,1) distribution for each pixel and color channel. All attacks are all-to-one with a random target label. For more details, please see the starter kit. 
+
+MNTD, Neural Cleanse, and ABS has been used as baseline Trojan detectors for participants to improve upon. These are well-known Trojan detectors from the academic literature, each with a distinct approach to Trojan detection. Also a specificity-based detector has been used as a baseline, since Trojan attacks with low specificity can be highly susceptible to such a detector. The specificity detector applies random triggers to inputs from a given data source, then runs these triggered inputs through the network in question. The negative entropy of the average posterior is used as a detection score. This leverages the fact that Trojan attacks without specificity are activated quite frequently by randomly sampled triggers.
