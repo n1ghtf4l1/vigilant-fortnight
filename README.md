@@ -31,7 +31,7 @@ Unlike standard machine learning tasks, the datasets consist of neural networks.
 
 ## How to Use
 
-**Clone this repository, download the competition [datasets](https://huggingface.co/datasets/anubhavde/trojan-detection/blob/main/tdc_datasets.zip) from my HuggingFace repository and unzip adjacent to the repository**. Ensure that Jupyter version is up-to-date (fairly recent). To avoid errors with model incompatibility, please use PyTorch version 1.11.0. Run one of the example notebooks or start building your own submission.
+**Clone this repository, download the competition [datasets](https://huggingface.co/datasets/n1ghtf4l1/vigilant-fortnight/blob/main/tdc_datasets.zip) from my HuggingFace repository and unzip adjacent to the repository**. Ensure that Jupyter version is up-to-date (fairly recent). To avoid errors with model incompatibility, please use PyTorch version 1.11.0. Run one of the example notebooks or start building your own submission.
 
 ### **Additional Information**
 
